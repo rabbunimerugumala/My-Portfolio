@@ -42,15 +42,3 @@ Make sure you have the following installed:
    ```bash
     http://localhost:5173
 
-
-My-Portfolio/
-├── src/                  # React components, pages, context, styles
-├── images/               # Portfolio images and assets
-├── public/               # Static files (if any)
-├── .gitignore            # Git ignore rules
-├── package.json          # npm scripts and dependencies
-├── tailwind.config.js    # Tailwind CSS config
-├── tsconfig.json         # TypeScript config
-├── vite.config.ts        # Vite config
-└── README.md             # This file
-
