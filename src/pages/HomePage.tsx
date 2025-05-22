@@ -8,7 +8,7 @@ const HomePage = () => {
   const profileImage = "/images/Photo.jpg"; // Replace with your image path
   const [displayText, setDisplayText] = useState("");
   const fullText =
-    "BTech EEE | Software Development & IoT Enthusiast |  Building Smart Solutions at NEXTSTEP Technologies.";
+    "BTech EEE | Software Development & IoT Enthusiast |  Building Smart Solutions at  NEXTSTEP TECHNOLOGIES.";
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
