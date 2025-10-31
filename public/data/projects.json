@@ -1,0 +1,87 @@
+{
+  "projects": [
+    {
+      "id": "apartment-power-alert-system",
+      "title": "Apartment Power Alert System",
+      "description": "A Smart System to Detect Power Availability and Alert Users to Turn Off or Turn On The Backup Generators — Save Fuel, Stay Notified..",
+      "images": [
+        { "url": "images/APAS2.jpg", "alt": "Apartment Power Alert System" },
+        { "url": "images/APAS1.jpg", "alt": "Apartment Power Alert System" },
+        { "url": "images/APAS3.jpg", "alt": "Apartment Power Alert System" }
+      ],
+      "githubUrl": "https://github.com/rabbunimerugumala/Apartment-Power-Alert-System",
+      "githubLabel": "GitHub Repository",
+      "liveUrl": null,
+      "technologies": [
+        "Arduino",
+        "Voltage Sensor",
+        "Current Sensor",
+        "LCD",
+        "Buzzer"
+      ],
+      "linkNote": "My own project",
+      "category": "IoT",
+      "featured": true
+    },
+    {
+      "id": "agrosense-irrigation-system",
+      "title": "AgroSense: Smart IoT-Based Irrigation & Monitoring System",
+      "description": "AgroSense is a smart IoT-based irrigation system that monitors soil moisture in real-time and automates watering only when needed. It reduces water wastage and allows remote monitoring via a mobile app.",
+      "images": [
+        { "url": "images/agro1.jpg", "alt": "AgroSense" },
+        { "url": "images/agro2.jpg", "alt": "AgroSense" },
+        { "url": "images/agro3.jpg", "alt": "AgroSense" }
+      ],
+      "githubUrl": "https://github.com/rabbunimerugumala/AgroSense-Smart-IoT-Based-Irrigation-Monitoring-System",
+      "githubLabel": "GitHub Repository",
+      "liveUrl": null,
+      "technologies": ["NodeMCU", "Arduino", "Blynk App"],
+      "linkNote": "Under RcubiX Technologies",
+      "category": "IoT",
+      "featured": true
+    },
+    {
+      "id": "automatic-water-level-controller",
+      "title": "Automatic Water Level Controller",
+      "description": "The Automatic Water Level Controller monitors tank water levels and automatically controls the motor to prevent overflow or dry run. It ensures efficient water usage, protects the pump, and eliminates the need for manual supervision.",
+      "images": [
+        { "url": "images/AWL1.jpg", "alt": "Automatic Water Level Controller" },
+        { "url": "images/AWL2.jpg", "alt": "Automatic Water Level Controller" },
+        { "url": "images/AWL3.jpg", "alt": "Automatic Water Level Controller" }
+      ],
+      "githubUrl": "https://github.com/rabbunimerugumala/Automatic-Water-Level-Controller",
+      "githubLabel": "GitHub Repository",
+      "liveUrl": null,
+      "technologies": ["Arduino", "Buzzer", "LCD", "Relay Modules", "Switchs"],
+      "linkNote": "Under RcubiX Technologies",
+      "category": "Automation",
+      "featured": true
+    },
+    {
+      "id": "automatic-railway-gate-control",
+      "title": "Automatic Railway Gate Control System (Dual Gate)",
+      "description": "An automated system that controls dual railway gates using sensors to detect train movement. Enhances safety by minimizing human error and ensuring synchronized gate operation.",
+      "images": [
+        {
+          "url": "images/ARG1.jpg",
+          "alt": "Automatic Railway Gate Control System"
+        },
+        {
+          "url": "images/ARG2.jpg",
+          "alt": "Automatic Railway Gate Control System"
+        },
+        {
+          "url": "images/ARG3.jpg",
+          "alt": "Automatic Railway Gate Control System"
+        }
+      ],
+      "githubUrl": "https://github.com/rabbunimerugumala/Automatic-Railway-Gate-Control-System-Dual-Gate",
+      "githubLabel": "GitHub Repository",
+      "liveUrl": null,
+      "technologies": ["Arduino", "Ultra Sonic Sensor", "LCD", "Servo Motors"],
+      "linkNote": "Under RcubiX Technologies",
+      "category": "Automation",
+      "featured": true
+    }
+  ]
+}
