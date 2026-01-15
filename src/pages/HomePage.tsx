@@ -8,7 +8,7 @@ const HomePage = () => {
   const profileImage = "/images/Photo.jpg"; // Replace with your image path
   const [displayText, setDisplayText] = useState("");
   const fullText =
-    "BTech EEE | Software Development & IoT Enthusiast |  Building Smart Solutions at  RcubiX TECHNOLOGIES.";
+    "BTech EEE | Software Development & IoT Enthusiast | Building Smart Solutions at RcubiX TECHNOLOGIES.";
   const [currentIndex, setCurrentIndex] = useState(0);
   const [blueIndex, setBlueIndex] = useState(0);
   const [typingComplete, setTypingComplete] = useState(false);
@@ -193,7 +193,7 @@ const HomePage = () => {
               Merugumala Rabbuni
             </h1>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-teal-400 rounded mb-6 mx-auto md:mx-0"></div>
-            <h2 className="text-xl sm:text-2xl font-medium mb-6 text-gray-700 dark:text-gray-300 min-h-[3rem] sm:min-h-0">
+            <h2 className="text-lg sm:text-2xl font-medium mb-4 sm:mb-6 text-gray-700 dark:text-gray-300 min-h-[3rem] sm:min-h-0 leading-snug">
               {renderStyledText(displayText)}
               <span className="animate-pulse">|</span>
             </h2>
