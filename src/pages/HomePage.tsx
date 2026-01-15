@@ -79,98 +79,23 @@ const HomePage = () => {
   return (
     <div className="min-h-[calc(100vh-4rem)] flex flex-col justify-center relative overflow-hidden">
       {/* Animated Background Elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Floating Particles - Enhanced for light mode */}
-        <div
-          className="absolute w-2.5 h-2.5 bg-blue-500/80 dark:bg-blue-400/30 rounded-full animate-float-1 shadow-lg shadow-blue-500/50"
-          style={{ top: "20%", left: "10%" }}
-        ></div>
-        <div
-          className="absolute w-3.5 h-3.5 bg-teal-500/70 dark:bg-teal-400/20 rounded-full animate-float-2 shadow-lg shadow-teal-500/40"
-          style={{ top: "60%", left: "15%" }}
-        ></div>
-        <div
-          className="absolute w-2 h-2 bg-green-500/85 dark:bg-green-400/40 rounded-full animate-float-3 shadow-lg shadow-green-500/50"
-          style={{ top: "40%", left: "85%" }}
-        ></div>
-        <div
-          className="absolute w-3 h-3 bg-blue-600/75 dark:bg-blue-500/25 rounded-full animate-float-4 shadow-lg shadow-blue-600/40"
-          style={{ top: "70%", left: "80%" }}
-        ></div>
-        <div
-          className="absolute w-2.5 h-2.5 bg-cyan-500/80 dark:bg-cyan-400/30 rounded-full animate-float-5 shadow-lg shadow-cyan-500/50"
-          style={{ top: "30%", left: "70%" }}
-        ></div>
-        <div
-          className="absolute w-4 h-4 bg-teal-600/65 dark:bg-teal-300/15 rounded-full animate-float-6 shadow-lg shadow-teal-600/40"
-          style={{ top: "80%", left: "25%" }}
-        ></div>
 
-        {/* Geometric Shapes - More prominent in light mode */}
-        <div
-          className="absolute w-10 h-10 border-2 border-blue-500/60 dark:border-blue-400/20 rotate-45 animate-rotate-slow shadow-blue-500/30"
-          style={{ top: "15%", right: "20%" }}
-        ></div>
-        <div
-          className="absolute w-8 h-8 border-2 border-teal-500/65 dark:border-teal-400/25 animate-rotate-reverse shadow-teal-500/30"
-          style={{ top: "75%", right: "15%" }}
-        ></div>
-        <div
-          className="absolute w-12 h-12 border-2 border-green-500/55 dark:border-green-400/15 rounded-full animate-pulse shadow-green-500/30"
-          style={{ top: "25%", left: "5%" }}
-        ></div>
-        <div
-          className="absolute w-6 h-6 border border-purple-500/50 dark:border-purple-400/20 rotate-45 animate-rotate-slow"
-          style={{ top: "35%", left: "90%" }}
-        ></div>
-
-        {/* Gradient Orbs - More visible in light mode */}
-        <div
-          className="absolute w-40 h-40 bg-gradient-to-br from-blue-400/30 via-blue-500/25 to-cyan-400/20 dark:from-blue-400/10 dark:via-blue-400/8 dark:to-cyan-400/10 rounded-full blur-3xl animate-float-slow shadow-xl"
-          style={{ top: "5%", right: "10%" }}
-        ></div>
-        <div
-          className="absolute w-32 h-32 bg-gradient-to-tr from-green-400/35 via-teal-400/30 to-cyan-400/25 dark:from-green-400/10 dark:via-teal-400/8 dark:to-cyan-400/10 rounded-full blur-3xl animate-float-slow-reverse shadow-xl"
-          style={{ bottom: "15%", left: "5%" }}
-        ></div>
-        <div
-          className="absolute w-28 h-28 bg-gradient-to-r from-purple-400/25 via-pink-400/20 to-blue-400/15 dark:from-purple-400/8 dark:via-pink-400/8 dark:to-blue-400/8 rounded-full blur-3xl animate-float-slow"
-          style={{ top: "50%", left: "50%" }}
-        ></div>
-
-        {/* Tech Circuit Lines - Enhanced visibility */}
-        <div
-          className="absolute w-px h-20 bg-gradient-to-b from-transparent via-blue-500/60 to-transparent dark:via-blue-400/20 animate-pulse shadow-lg shadow-blue-500/40"
-          style={{ top: "45%", left: "25%" }}
-        ></div>
-        <div
-          className="absolute w-20 h-px bg-gradient-to-r from-transparent via-teal-500/60 to-transparent dark:via-teal-400/20 animate-pulse shadow-lg shadow-teal-500/40"
-          style={{ top: "55%", right: "25%" }}
-        ></div>
-        <div
-          className="absolute w-px h-16 bg-gradient-to-b from-transparent via-cyan-500/50 to-transparent dark:via-cyan-400/20 animate-pulse"
-          style={{ top: "65%", left: "85%" }}
-        ></div>
-      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left column - Profile Image */}
           <AnimatedSection className="w-full md:w-5/12 flex justify-center">
             <div className="relative rounded-full p-1">
-              {" "}
-              {/* outer wrapper with padding for border */}
-              {/* Rotating Border */}
+              {/* Rotating Border - Blue/Violet */}
               <div
                 className="absolute inset-0 rounded-full border-4 border-transparent bg-clip-border animate-spin-slow"
                 style={{
-                  background: `linear-gradient(white, white) padding-box, linear-gradient(to right,rgb(25, 104, 231),rgb(3, 255, 41)) border-box`,
-                  boxShadow:
-                    "0 0 15px 5px rgba(59, 130, 246, 0.6), 0 0 20px 10px rgba(11, 91, 64, 0.5)",
+                  background: `linear-gradient(#02030a, #02030a) padding-box, linear-gradient(to right, #3b82f6, #8b5cf6) border-box`,
+                  boxShadow: "0 0 20px rgba(59, 130, 246, 0.4)",
                 }}
               />
               {/* Image Container */}
-              <div className="rounded-full h-64 w-64 sm:h-80 sm:w-80 md:h-96 md:w-96 overflow-hidden bg-gray-100 relative z-10">
+              <div className="rounded-full h-64 w-64 sm:h-80 sm:w-80 md:h-96 md:w-96 overflow-hidden bg-[#0d0c22] relative z-10">
                 <img
                   src={profileImage}
                   alt="Merugumala Rabbuni"
@@ -189,16 +114,16 @@ const HomePage = () => {
             className="w-full md:w-7/12 text-center md:text-left"
             delay={200}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white font-display">
               Merugumala Rabbuni
             </h1>
-            <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-teal-400 rounded mb-6 mx-auto md:mx-0"></div>
-            <h2 className="text-lg sm:text-2xl font-medium mb-4 sm:mb-6 text-gray-700 dark:text-gray-300 min-h-[3rem] sm:min-h-0 leading-snug">
+            <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-violet-500 rounded mb-6 mx-auto md:mx-0"></div>
+            <h2 className="text-lg sm:text-2xl font-medium mb-4 sm:mb-6 text-gray-300 min-h-[3rem] sm:min-h-0 leading-snug">
               {renderStyledText(displayText)}
-              <span className="animate-pulse">|</span>
+              <span className="animate-pulse text-violet-500">|</span>
             </h2>
-            <p className="text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto md:mx-0 leading-relaxed">
-              <span className="font-bold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
+            <p className="text-lg mb-8 text-gray-400 max-w-2xl mx-auto md:mx-0 leading-relaxed font-sans">
+              <span className="font-bold bg-gradient-to-r from-blue-400 to-violet-400 bg-clip-text text-transparent">
                 Turning Circuits into Solutions
               </span>{" "}
               - Passionate about creating innovative IoT solutions that solve
@@ -207,16 +132,16 @@ const HomePage = () => {
             <div className="flex flex-row gap-4 justify-center md:justify-start w-full md:w-auto px-4 sm:px-0">
               <button
                 onClick={() => scrollToSection("projects")}
-                className="flex-1 md:flex-none md:w-48 px-6 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-lg hover:shadow-blue-500/30 flex items-center justify-center group text-sm sm:text-base"
+                className="btn-habit px-8 py-3.5 flex items-center justify-center group text-sm sm:text-base"
               >
                 View Projects
                 <ChevronRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
               <button
                 onClick={() => window.open("/resume.pdf", "_blank")}
-                className="flex-1 md:flex-none md:w-48 px-6 py-3.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 font-medium rounded-xl transition-all hover:scale-[1.02] flex items-center justify-center text-sm sm:text-base"
+                className="px-8 py-3.5 bg-white/5 hover:bg-white/10 text-gray-300 font-medium rounded-xl transition-all hover:scale-[1.02] border border-white/10 flex items-center justify-center text-sm sm:text-base backdrop-blur-sm"
               >
-                <FileText size={18} className="mr-2" />
+                <FileText size={18} className="mr-2 text-violet-400" />
                 Resume
               </button>
             </div>

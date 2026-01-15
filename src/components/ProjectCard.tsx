@@ -54,10 +54,10 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="group h-full flex flex-col rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 dark:shadow-gray-900/20">
+    <div className="glass-habit glass-habit-hover group h-full flex flex-col rounded-xl overflow-hidden border border-white/5 transition-all duration-300 transform hover:-translate-y-1">
       {/* Image carousel - Square aspect ratio */}
       <div
-        className="relative aspect-video overflow-hidden bg-gray-100 dark:bg-gray-900"
+        className="relative aspect-video overflow-hidden bg-[#0d0c22]"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -70,7 +70,7 @@ const ProjectCard = ({
               <img
                 src={image.url}
                 alt={image.alt}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
               />
             </div>
           ))}
@@ -81,14 +81,14 @@ const ProjectCard = ({
           <>
             <button
               onClick={prevImage}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm border border-white/10"
               aria-label="Previous image"
             >
               <ChevronLeft size={20} />
             </button>
             <button
               onClick={nextImage}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-sm border border-white/10"
               aria-label="Next image"
             >
               <ChevronRight size={20} />
@@ -108,10 +108,10 @@ const ProjectCard = ({
       </div>
 
       <div className="flex-1 flex flex-col p-4 sm:p-5">
-        <h3 className="text-lg sm:text-xl font-bold mb-1 text-gray-900 dark:text-white line-clamp-2 sm:line-clamp-1 min-h-[1.75rem]">
+        <h3 className="text-lg sm:text-xl font-bold mb-1 text-white line-clamp-2 sm:line-clamp-1 min-h-[1.75rem] group-hover:text-blue-400 transition-colors">
           {title}
         </h3>
-        <p className="text-gray-700 dark:text-gray-300 mb-2 sm:mb-4 line-clamp-2 text-sm leading-relaxed h-[3rem] overflow-hidden">
+        <p className="text-gray-300 mb-2 sm:mb-4 line-clamp-2 text-sm leading-relaxed h-[3rem] overflow-hidden">
           {description}
         </p>
 
@@ -121,7 +121,7 @@ const ProjectCard = ({
             {technologies.slice(0, 4).map((tech, index) => (
               <span
                 key={index}
-                className="px-2 py-1 text-xs font-medium rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 whitespace-nowrap"
+                className="px-2 py-1 text-xs font-medium rounded-full bg-violet-500/10 text-violet-300 border border-violet-500/20 whitespace-nowrap"
               >
                 {tech}
               </span>
@@ -131,18 +131,18 @@ const ProjectCard = ({
         </div>
 
         {/* Links */}
-        <div className="flex flex-row justify-between mt-1">
+        <div className="flex flex-row justify-between mt-1 pt-3 border-t border-white/5">
           {githubUrl && (
             <a
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center sm:justify-start text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
+              className="flex items-center justify-center sm:justify-start text-sm font-medium text-gray-400 hover:text-white transition-colors group/link"
               aria-label="GitHub repository"
             >
-              <Github size={16} className="mr-2" />
+              <Github size={16} className="mr-2 group-hover/link:text-white transition-colors" />
               <span className="truncate">
-                {githubLabel || "GitHub Repository"}
+                {githubLabel || "GitHub"}
               </span>
             </a>
           )}
@@ -152,10 +152,10 @@ const ProjectCard = ({
               href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center sm:justify-start text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400 transition-colors"
+              className="flex items-center justify-center sm:justify-start text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors group/live"
               aria-label="Live preview"
             >
-              <ExternalLink size={16} className="mr-2" />
+              <ExternalLink size={16} className="mr-2 group-hover/live:scale-110 transition-transform" />
               <span>Live Demo</span>
             </a>
           )}

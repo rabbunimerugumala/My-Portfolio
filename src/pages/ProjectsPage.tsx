@@ -40,24 +40,24 @@ const ProjectsPage = () => {
   const categories: ('All' | 'Software' | 'IoT')[] = ['All', 'Software', 'IoT'];
 
   return (
-    <div className="min-h-[calc(100vh-4rem)] bg-gray-50/50 dark:bg-gray-900/50">
+    <div className="min-h-[calc(100vh-4rem)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <AnimatedSection>
           <div className="text-center mb-12">
-            <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-gray-900 dark:text-white tracking-tight">
+            <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 text-white tracking-tight font-display">
               Featured Projects
             </h1>
-            <div className="h-1.5 w-24 bg-gradient-to-r from-blue-600 to-teal-400 rounded-full mb-8 mx-auto"></div>
+            <div className="h-1.5 w-24 bg-gradient-to-r from-blue-600 to-violet-500 rounded-full mb-8 mx-auto"></div>
 
             {/* Filter Tabs */}
-            <div className="inline-flex p-1 rounded-xl bg-gray-200/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200 dark:border-gray-700/50">
+            <div className="inline-flex p-1 rounded-xl glass-habit border border-white/5">
               {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
                   className={`px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ${activeCategory === cat
-                      ? "bg-white dark:bg-gray-700 text-blue-600 dark:text-blue-400 shadow-sm transform scale-105"
-                      : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
+                    ? "bg-gradient-to-r from-blue-600 to-violet-600 text-white shadow-lg transform scale-105"
+                    : "text-gray-400 hover:text-white"
                     }`}
                 >
                   {cat === 'IoT' ? 'Hardware & IoT' : cat}
@@ -77,11 +77,11 @@ const ProjectsPage = () => {
         {/* Error State */}
         {error && (
           <div className="text-center py-16">
-            <div className="glass-panel inline-block p-8 rounded-2xl">
-              <p className="text-red-500 font-medium mb-4">{error}</p>
+            <div className="glass-habit inline-block p-8 rounded-2xl border border-red-500/20">
+              <p className="text-red-400 font-medium mb-4">{error}</p>
               <button
                 onClick={() => window.location.reload()}
-                className="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                className="btn-habit px-6 py-2 text-white hover:brightness-110 transition-all"
               >
                 Retry
               </button>

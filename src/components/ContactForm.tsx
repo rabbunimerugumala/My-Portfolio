@@ -91,7 +91,7 @@ Message: ${formData.message}`;
       <div>
         <label
           htmlFor="name"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+          className="block text-sm font-medium text-gray-300 mb-1"
         >
           Name
         </label>
@@ -101,22 +101,21 @@ Message: ${formData.message}`;
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className={`w-full px-4 py-2 rounded-md border ${
-            errors.name
+          className={`w-full px-4 py-2 rounded-lg bg-black/20 border ${errors.name
               ? "border-red-500"
-              : "border-gray-300 dark:border-gray-700"
-          } focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white transition-all`}
+              : "border-white/10"
+            } focus:outline-none focus:border-blue-500 text-white transition-all placeholder-gray-500`}
           placeholder="Your name"
         />
         {errors.name && (
-          <p className="mt-1 text-sm text-red-500">{errors.name}</p>
+          <p className="mt-1 text-sm text-red-400">{errors.name}</p>
         )}
       </div>
 
       <div>
         <label
           htmlFor="email"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+          className="block text-sm font-medium text-gray-300 mb-1"
         >
           Email
         </label>
@@ -126,22 +125,21 @@ Message: ${formData.message}`;
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className={`w-full px-4 py-2 rounded-md border ${
-            errors.email
+          className={`w-full px-4 py-2 rounded-lg bg-black/20 border ${errors.email
               ? "border-red-500"
-              : "border-gray-300 dark:border-gray-700"
-          } focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white transition-all`}
+              : "border-white/10"
+            } focus:outline-none focus:border-blue-500 text-white transition-all placeholder-gray-500`}
           placeholder="your.email@example.com"
         />
         {errors.email && (
-          <p className="mt-1 text-sm text-red-500">{errors.email}</p>
+          <p className="mt-1 text-sm text-red-400">{errors.email}</p>
         )}
       </div>
 
       <div>
         <label
           htmlFor="message"
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+          className="block text-sm font-medium text-gray-300 mb-1"
         >
           Message
         </label>
@@ -151,22 +149,21 @@ Message: ${formData.message}`;
           value={formData.message}
           onChange={handleChange}
           rows={5}
-          className={`w-full px-4 py-2 rounded-md border ${
-            errors.message
+          className={`w-full px-4 py-2 rounded-lg bg-black/20 border ${errors.message
               ? "border-red-500"
-              : "border-gray-300 dark:border-gray-700"
-          } focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-white transition-all resize-none`}
+              : "border-white/10"
+            } focus:outline-none focus:border-blue-500 text-white transition-all resize-none placeholder-gray-500`}
           placeholder="Your message..."
         />
         {errors.message && (
-          <p className="mt-1 text-sm text-red-500">{errors.message}</p>
+          <p className="mt-1 text-sm text-red-400">{errors.message}</p>
         )}
       </div>
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full flex items-center justify-center px-6 py-3 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="btn-habit w-full flex items-center justify-center px-6 py-3 rounded-lg text-white font-medium transition-all focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed hover:scale-[1.02]"
       >
         {isSubmitting ? (
           <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>

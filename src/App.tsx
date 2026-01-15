@@ -8,6 +8,8 @@ import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import { ThemeProvider } from './context/ThemeContext';
 
+import Background from './components/Background';
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -22,7 +24,7 @@ function App() {
 
   if (loading) {
     return (
-      <div className="fixed inset-0 flex items-center justify-center bg-gray-900">
+      <div className="fixed inset-0 flex items-center justify-center bg-[#02030a]">
         <div className="animate-pulse text-3xl font-bold text-blue-500">MR</div>
       </div>
     );
@@ -31,23 +33,26 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div className="min-h-screen flex flex-col transition-colors duration-300 dark:bg-gray-900 bg-gray-50">
-          <Navbar />
-          <main className="flex-grow">
-            <section id="home">
-              <HomePage />
-            </section>
-            <section id="about">
-              <AboutPage />
-            </section>
-            <section id="projects">
-              <ProjectsPage />
-            </section>
-            <section id="contact">
-              <ContactPage />
-            </section>
-          </main>
-          <Footer />
+        <div className="min-h-screen flex flex-col relative">
+          <Background />
+          <div className="relative z-10 flex flex-col min-h-screen">
+            <Navbar />
+            <main className="flex-grow">
+              <section id="home">
+                <HomePage />
+              </section>
+              <section id="about">
+                <AboutPage />
+              </section>
+              <section id="projects">
+                <ProjectsPage />
+              </section>
+              <section id="contact">
+                <ContactPage />
+              </section>
+            </main>
+            <Footer />
+          </div>
         </div>
       </Router>
     </ThemeProvider>

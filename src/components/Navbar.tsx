@@ -1,11 +1,9 @@
-import { useState, useContext, useEffect } from "react";
-import { ThemeContext } from "../context/ThemeContext";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  const { theme, toggleTheme } = useContext(ThemeContext);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -37,7 +35,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/90 backdrop-blur-sm shadow-sm dark:shadow-gray-800/10">
+    <nav className="sticky top-0 z-50 glass-habit border-b-0 rounded-none bg-opacity-80 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -45,7 +43,7 @@ const Navbar = () => {
               onClick={() => scrollToSection("home")}
               className="flex items-center"
             >
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-violet-500 bg-clip-text text-transparent">
                 Merugumala Rabbuni
               </span>
             </button>
@@ -80,23 +78,11 @@ const Navbar = () => {
             >
               Contact
             </button>
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700"
-              aria-label="Toggle theme"
-            >
-              {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
-            </button>
+
           </div>
 
           <div className="md:hidden flex items-center">
-            <button
-              onClick={toggleTheme}
-              className="mr-2 p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 transition-colors hover:bg-gray-200 dark:hover:bg-gray-700"
-              aria-label="Toggle theme"
-            >
-              {theme === "light" ? <Moon size={20} /> : <Sun size={20} />}
-            </button>
+
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
@@ -110,7 +96,7 @@ const Navbar = () => {
 
       {/* Mobile menu with smooth transition */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full z-50 overflow-hidden transition-all duration-300 ease-in-out bg-white dark:bg-gray-900 shadow-lg border-t border-gray-100 dark:border-gray-800 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        className={`md:hidden absolute top-full left-0 w-full z-50 overflow-hidden transition-all duration-300 ease-in-out glass-habit rounded-t-none border-t border-white/5 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
