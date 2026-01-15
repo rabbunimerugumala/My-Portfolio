@@ -95,7 +95,7 @@ const HomePage = () => {
                 }}
               />
               {/* Image Container */}
-              <div className="rounded-full h-64 w-64 sm:h-80 sm:w-80 md:h-96 md:w-96 overflow-hidden bg-[#0d0c22] relative z-10">
+              <div className="rounded-full h-64 w-64 sm:h-80 sm:w-80 md:h-96 md:w-96 overflow-hidden bg-[#e0f1ff] relative z-10">
                 <img
                   src={profileImage}
                   alt="Merugumala Rabbuni"
