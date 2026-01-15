@@ -14,9 +14,9 @@
           "alt": "HabitPulse Analytics"
         }
       ],
-      "githubUrl": "https://github.com/rabbunimerugumala",
+      "githubUrl": "https://github.com/rabbunimerugumala/HabitPulse-Pro",
       "githubLabel": "GitHub Repository",
-      "liveUrl": "https://habitpulse-pro.vercel.app",
+      "liveUrl": "https://habit-pulse-pro.vercel.app/",
       "technologies": [
         "React",
         "TypeScript",
@@ -30,26 +30,34 @@
     },
     {
       "id": "management-pro",
-      "title": "Management Pro PWA",
+      "title": "Management Pro",
       "description": "Mobile-first Progressive Web App for construction site managers. Handles attendance, materials, and daily reporting with offline capabilities.",
       "images": [
         {
-          "url": "https://placehold.co/600x600/0f172a/FFF?text=Management+Pro",
+          "url": "images/management-pro/managepro1.png",
           "alt": "Management Pro Interface"
         },
         {
-          "url": "https://placehold.co/600x600/334155/FFF?text=Reports+Module",
+          "url": "images/management-pro/managepro2.png",
+          "alt": "Reports Module"
+        },
+        {
+          "url": "images/management-pro/managepro3.png",
+          "alt": "Reports Module"
+        },
+        {
+          "url": "images/management-pro/managepro4.png",
           "alt": "Reports Module"
         }
       ],
-      "githubUrl": "https://github.com/rabbunimerugumala",
+      "githubUrl": "https://github.com/rabbunimerugumala/Manager-Pro",
       "githubLabel": "GitHub Repository",
-      "liveUrl": null,
+      "liveUrl": "https://manager-pro-app.vercel.app/",
       "technologies": [
-        "Flask",
-        "SQLAlchemy",
-        "Bootstrap 5",
-        "PWA"
+        "Next.js",
+        "TypeScript",
+        "Firebase ",
+        "Tailwind CSS"
       ],
       "linkNote": "Enterprise Solution",
       "category": "Software",
