@@ -1,6 +1,6 @@
 import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, FileText } from "lucide-react";
 import AnimatedSection from "../components/AnimatedSection";
 
 const HomePage = () => {
@@ -170,7 +170,7 @@ const HomePage = () => {
                 }}
               />
               {/* Image Container */}
-              <div className="rounded-full h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96 overflow-hidden bg-gray-100 relative z-10">
+              <div className="rounded-full h-64 w-64 sm:h-80 sm:w-80 md:h-96 md:w-96 overflow-hidden bg-gray-100 relative z-10">
                 <img
                   src={profileImage}
                   alt="Merugumala Rabbuni"
@@ -193,30 +193,31 @@ const HomePage = () => {
               Merugumala Rabbuni
             </h1>
             <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-teal-400 rounded mb-6 mx-auto md:mx-0"></div>
-            <h2 className="text-xl sm:text-2xl font-medium mb-6 text-gray-700 dark:text-gray-300">
+            <h2 className="text-xl sm:text-2xl font-medium mb-6 text-gray-700 dark:text-gray-300 min-h-[3rem] sm:min-h-0">
               {renderStyledText(displayText)}
               <span className="animate-pulse">|</span>
             </h2>
-            <p className="text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
+            <p className="text-lg mb-8 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto md:mx-0 leading-relaxed">
               <span className="font-bold bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
                 Turning Circuits into Solutions
               </span>{" "}
               - Passionate about creating innovative IoT solutions that solve
               real-world problems through the fusion of hardware and software.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+            <div className="flex flex-row gap-4 justify-center md:justify-start w-full md:w-auto px-4 sm:px-0">
               <button
                 onClick={() => scrollToSection("projects")}
-                className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors flex items-center"
+                className="flex-1 md:flex-none md:w-48 px-6 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-lg hover:shadow-blue-500/30 flex items-center justify-center group text-sm sm:text-base"
               >
                 View Projects
-                <ChevronRight size={18} className="ml-1" />
+                <ChevronRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
               <button
-                onClick={() => scrollToSection("contact")}
-                className="px-6 py-3 bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 font-medium rounded-md transition-colors"
+                onClick={() => window.open("/resume.pdf", "_blank")}
+                className="flex-1 md:flex-none md:w-48 px-6 py-3.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 font-medium rounded-xl transition-all hover:scale-[1.02] flex items-center justify-center text-sm sm:text-base"
               >
-                Get In Touch
+                <FileText size={18} className="mr-2" />
+                Resume
               </button>
             </div>
           </AnimatedSection>

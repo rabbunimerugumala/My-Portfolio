@@ -54,33 +54,29 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("home")}
-              className={`text-base font-medium transition-colors text-gray-800 dark:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-blue-500 after:transition-all after:duration-300 ${
-                activeSection === "home" ? "after:w-full" : "after:w-0"
-              }`}
+              className={`text-base font-medium transition-colors text-gray-800 dark:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-blue-500 after:transition-all after:duration-300 ${activeSection === "home" ? "after:w-full" : "after:w-0"
+                }`}
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className={`text-base font-medium transition-colors text-gray-800 dark:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-blue-500 after:transition-all after:duration-300 ${
-                activeSection === "about" ? "after:w-full" : "after:w-0"
-              }`}
+              className={`text-base font-medium transition-colors text-gray-800 dark:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-blue-500 after:transition-all after:duration-300 ${activeSection === "about" ? "after:w-full" : "after:w-0"
+                }`}
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("projects")}
-              className={`text-base font-medium transition-colors text-gray-800 dark:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-blue-500 after:transition-all after:duration-300 ${
-                activeSection === "projects" ? "after:w-full" : "after:w-0"
-              }`}
+              className={`text-base font-medium transition-colors text-gray-800 dark:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-blue-500 after:transition-all after:duration-300 ${activeSection === "projects" ? "after:w-full" : "after:w-0"
+                }`}
             >
               Projects
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className={`text-base font-medium transition-colors text-gray-800 dark:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-blue-500 after:transition-all after:duration-300 ${
-                activeSection === "contact" ? "after:w-full" : "after:w-0"
-              }`}
+              className={`text-base font-medium transition-colors text-gray-800 dark:text-gray-200 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:bg-blue-500 after:transition-all after:duration-300 ${activeSection === "contact" ? "after:w-full" : "after:w-0"
+                }`}
             >
               Contact
             </button>
@@ -112,46 +108,45 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
-      <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-900 shadow-md">
+      {/* Mobile menu with smooth transition */}
+      <div
+        className={`md:hidden absolute top-full left-0 w-full z-50 overflow-hidden transition-all duration-300 ease-in-out bg-white dark:bg-gray-900 shadow-lg border-t border-gray-100 dark:border-gray-800 ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          }`}
+      >
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <button
             onClick={() => scrollToSection("home")}
-            className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-              activeSection === "home"
-                ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
-                : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-            }`}
+            className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors ${activeSection === "home"
+              ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
+              : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+              }`}
           >
             Home
           </button>
           <button
             onClick={() => scrollToSection("about")}
-            className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-              activeSection === "about"
-                ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
-                : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-            }`}
+            className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors ${activeSection === "about"
+              ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
+              : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+              }`}
           >
             About
           </button>
           <button
             onClick={() => scrollToSection("projects")}
-            className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-              activeSection === "projects"
-                ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
-                : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-            }`}
+            className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors ${activeSection === "projects"
+              ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
+              : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+              }`}
           >
             Projects
           </button>
           <button
             onClick={() => scrollToSection("contact")}
-            className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-              activeSection === "contact"
-                ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
-                : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
-            }`}
+            className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors ${activeSection === "contact"
+              ? "bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
+              : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800"
+              }`}
           >
             Contact
           </button>

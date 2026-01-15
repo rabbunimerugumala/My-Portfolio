@@ -49,11 +49,15 @@ const AboutPage = () => {
 
     container.addEventListener("mouseenter", handleMouseEnter);
     container.addEventListener("mouseleave", handleMouseLeave);
+    container.addEventListener("touchstart", handleMouseEnter); // Pause on touch
+    container.addEventListener("touchend", handleMouseLeave);   // Resume on touch end
 
     return () => {
       cancelAnimationFrame(animationId);
       container.removeEventListener("mouseenter", handleMouseEnter);
       container.removeEventListener("mouseleave", handleMouseLeave);
+      container.removeEventListener("touchstart", handleMouseEnter);
+      container.removeEventListener("touchend", handleMouseLeave);
     };
   }, []);
   // Software-related skills with their icon paths
@@ -128,23 +132,23 @@ const AboutPage = () => {
         </AnimatedSection>
 
         <AnimatedSection delay={100} className="mb-12">
-          <div className="prose prose-lg dark:prose-invert mx-auto text-gray-700 dark:text-gray-300">
-            <p className="mb-4">
+          <div className="prose prose-base sm:prose-lg dark:prose-invert mx-auto text-gray-700 dark:text-gray-300">
+            <p className="mb-6 leading-relaxed text-justify sm:text-left">
               Hello! I'm <strong>Merugumala Rabbuni</strong>, an <strong>Electrical and Electronics Engineering (EEE)</strong> student with a passion for <strong>embedded systems</strong>, <strong>IoT technologies</strong>, and <strong>coding</strong>.
             </p>
-            <p className="mb-4">
+            <p className="mb-6 leading-relaxed text-justify sm:text-left">
               My journey began with a fascination for how electronic devices work, which soon evolved into a deep interest in creating <strong>smart</strong>, <strong>connected</strong>, and <strong>intelligent systems</strong> that blend <strong>hardware</strong>, <strong>software</strong>, and <strong>innovation</strong>.
             </p>
-            <p className="mb-4">
+            <p className="mb-6 leading-relaxed text-justify sm:text-left">
               I'm currently building <strong className="text-blue-600 dark:text-blue-400">RcubiX TECHNOLOGIES</strong>, where I’ve dedicated myself to developing <strong>innovative IoT products</strong> that bridge the gap between <strong>electronics</strong> and <strong>software</strong>. RcubiX is a <strong>growing initiative</strong> focused on delivering <strong>high-quality</strong>, <strong>custom engineering projects</strong> for <strong>Diploma</strong> and <strong>B.Tech</strong> students.
             </p>
-            <p className="mb-4">
+            <p className="mb-6 leading-relaxed text-justify sm:text-left">
               Along with IoT and embedded development, I’m deeply into <strong>coding</strong> and <strong>full‑stack web development</strong> — I love building <strong>dynamic</strong>, <strong>responsive websites</strong> and <strong>digital platforms</strong> that combine creative design with powerful functionality. Whether it’s <strong>coding firmware</strong> for an IoT device or developing an entire <strong>web dashboard</strong> to control it — I love bringing <strong>both worlds together</strong>.
             </p>
-            <p className="mb-4">
+            <p className="mb-6 leading-relaxed text-justify sm:text-left">
               I’m always eager to <strong>explore new technologies</strong>, <strong>learn continuously</strong>, and <strong>push the boundaries</strong> of what’s possible in <strong>IoT</strong>, <strong>embedded systems</strong>, <strong>automation</strong>, and <strong>web technologies</strong>.
             </p>
-            <p>
+            <p className="leading-relaxed text-justify sm:text-left">
               If you're working on something exciting or looking to collaborate on <strong>tech‑driven projects</strong>, feel free to reach out — I’m always open to <strong>new ideas</strong>, <strong>teamwork</strong>, and <strong>innovation</strong>.
             </p>
           </div>
@@ -163,7 +167,7 @@ const AboutPage = () => {
             <div className="relative">
               <div
                 ref={scrollContainerRef}
-                className="overflow-x-hidden overflow-y-hidden pb-6 px-2"
+                className="overflow-x-auto scrollbar-hide pb-6 px-2 whitespace-nowrap"
               >
                 <div className="flex gap-4 min-w-max py-2">
                   {softwareSkills.map((skill, index) => (
@@ -253,68 +257,66 @@ const AboutPage = () => {
               Education
             </h3>
 
-            {/* Ultra Compact List */}
-            <div className="space-y-2.5 sm:space-y-3">
-              {/* SSC */}
-              <div className="flex flex-col sm:flex-row sm:items-start gap-1.5 sm:gap-3 py-2 sm:py-2.5 border-b border-gray-200 dark:border-gray-700 last:border-0">
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-baseline gap-1.5 sm:gap-2 mb-0.5">
-                    <h4 className="text-sm sm:text-base font-semibold text-gray-900 dark:text-white">
-                      Secondary School Certificate (SSC)
-                    </h4>
-                    <span className="text-xs text-green-600 dark:text-green-400">
-                      Class 10th
-                    </span>
-                  </div>
-                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                    ZPH School, Tadanki
-                  </p>
+            {/* Education Timeline */}
+            <div className="relative pl-8 space-y-6 sm:space-y-8 before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[2px] before:bg-gray-200 dark:before:bg-gray-700">
+
+              {/* Bachelor's */}
+              <div className="relative">
+                <div className="absolute -left-8 mt-1.5 w-6 h-6 rounded-full border-4 border-white dark:border-gray-800 bg-blue-600 z-10"></div>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+                  <h4 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white">
+                    Bachelor of Technology
+                  </h4>
+                  <span className="text-xs sm:text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-2.5 py-0.5 rounded-full mt-1.5 sm:mt-0 w-fit">
+                    2024 - 2027 (Current)
+                  </span>
                 </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400 font-medium whitespace-nowrap">
-                  2019 - 2021
-                </span>
+                <div className="text-sm sm:text-base font-medium text-gray-700 dark:text-gray-300 mb-0.5">
+                  Electrical & Electronics Engineering
+                </div>
+                <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+                  Seshadri Rao Gudlavalleru Engineering College
+                </div>
               </div>
 
               {/* Diploma */}
-              <div className="flex flex-col sm:flex-row sm:items-start gap-1.5 sm:gap-3 py-2 sm:py-2.5 border-b border-gray-200 dark:border-gray-700 last:border-0">
-                <div className="flex-1 min-w-0">
-                  <h4 className="text-sm sm:text-base font-semibold text-gray-900 dark:text-white mb-0.5">
+              <div className="relative">
+                <div className="absolute -left-8 mt-1.5 w-6 h-6 rounded-full border-4 border-white dark:border-gray-800 bg-teal-500 z-10"></div>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+                  <h4 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white">
                     Diploma in Engineering
                   </h4>
-                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-0.5">
-                    Electrical & Electronics Engineering
-                  </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-500 break-words">
-                    A.A.N.M. & V.V.R.S.R. POLYTECHNIC, GUDLAVALLERU
-                  </p>
+                  <span className="text-xs sm:text-sm font-medium text-teal-600 dark:text-teal-400 bg-teal-50 dark:bg-teal-900/20 px-2.5 py-0.5 rounded-full mt-1.5 sm:mt-0 w-fit">
+                    2021 - 2024
+                  </span>
                 </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400 font-medium whitespace-nowrap">
-                  2021 - 2024
-                </span>
+                <div className="text-sm sm:text-base font-medium text-gray-700 dark:text-gray-300 mb-0.5">
+                  Electrical & Electronics Engineering
+                </div>
+                <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+                  A.A.N.M. & V.V.R.S.R. Polytechnic
+                </div>
               </div>
 
-              {/* Bachelor's */}
-              <div className="flex flex-col sm:flex-row sm:items-start gap-1.5 sm:gap-3 py-2 sm:py-2.5">
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-baseline gap-1.5 sm:gap-2 mb-0.5">
-                    <h4 className="text-sm sm:text-base font-semibold text-gray-900 dark:text-white">
-                      Bachelor of Technology
-                    </h4>
-                    <span className="inline-block bg-blue-500 text-white px-1.5 sm:px-2 py-0.5 rounded text-xs font-bold">
-                      CURRENT
-                    </span>
-                  </div>
-                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-0.5">
-                    Electrical & Electronics Engineering
-                  </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-500 break-words uppercase">
-                    Seshadri Rao Gudlavalleru Engineering College, Gudlavalleru
-                  </p>
+              {/* SSC */}
+              <div className="relative">
+                <div className="absolute -left-8 mt-1.5 w-6 h-6 rounded-full border-4 border-white dark:border-gray-800 bg-gray-400 dark:bg-gray-600 z-10"></div>
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-1">
+                  <h4 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white">
+                    Secondary School Certificate
+                  </h4>
+                  <span className="text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700/50 px-2.5 py-0.5 rounded-full mt-1.5 sm:mt-0 w-fit">
+                    2021
+                  </span>
                 </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400 font-medium whitespace-nowrap">
-                  2024 - 2027
-                </span>
+                <div className="text-sm sm:text-base font-medium text-gray-700 dark:text-gray-300 mb-0.5">
+                  Class 10th
+                </div>
+                <div className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
+                  ZPH School, Tadanki
+                </div>
               </div>
+
             </div>
           </div>
         </AnimatedSection>

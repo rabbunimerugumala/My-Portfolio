@@ -21,7 +21,7 @@ export interface Project {
   liveUrl?: string | null;
   technologies: string[];
   linkNote?: string;
-  category: string;
+  category: 'Software' | 'IoT' | 'Automation' | 'Electronics';
   featured: boolean;
 }
 

@@ -54,10 +54,10 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="group h-[550px] sm:h-[600px] flex flex-col rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 dark:shadow-gray-900/20">
+    <div className="group h-full flex flex-col rounded-xl overflow-hidden bg-white dark:bg-gray-800 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 dark:shadow-gray-900/20">
       {/* Image carousel - Square aspect ratio */}
       <div
-        className="relative aspect-square overflow-hidden"
+        className="relative aspect-video overflow-hidden bg-gray-100 dark:bg-gray-900"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -98,9 +98,8 @@ const ProjectCard = ({
               {images.map((_, index) => (
                 <div
                   key={index}
-                  className={`w-1.5 h-1.5 rounded-full ${
-                    currentImage === index ? "bg-white" : "bg-white/50"
-                  }`}
+                  className={`w-1.5 h-1.5 rounded-full ${currentImage === index ? "bg-white" : "bg-white/50"
+                    }`}
                 />
               ))}
             </div>
@@ -109,10 +108,10 @@ const ProjectCard = ({
       </div>
 
       <div className="flex-1 flex flex-col p-4 sm:p-5">
-        <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900 dark:text-white line-clamp-1 min-h-[1.75rem]">
+        <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900 dark:text-white line-clamp-2 sm:line-clamp-1 min-h-[3.5rem] sm:min-h-[1.75rem]">
           {title}
         </h3>
-        <p className="text-gray-700 dark:text-gray-300 mb-4 line-clamp-2 text-sm leading-relaxed h-[2.5rem] overflow-hidden">
+        <p className="text-gray-700 dark:text-gray-300 mb-4 line-clamp-3 sm:line-clamp-2 text-sm leading-relaxed h-[3.8rem] sm:h-[2.5rem] overflow-hidden">
           {description}
         </p>
 
