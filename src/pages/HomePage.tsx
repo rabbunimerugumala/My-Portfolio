@@ -81,7 +81,7 @@ const HomePage = () => {
       {/* Animated Background Elements */}
 
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 relative z-10 pt-32 md:pt-44">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left column - Profile Image */}
           <AnimatedSection className="w-full md:w-5/12 flex justify-center">
@@ -150,7 +150,7 @@ const HomePage = () => {
       </div>
 
       {/* Custom CSS Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes float-1 {
           0%,
           100% {
