@@ -61,15 +61,15 @@
       "description": "A Smart System to Detect Power Availability and Alert Users to Turn Off or Turn On The Backup Generators — Save Fuel, Stay Notified..",
       "images": [
         {
-          "url": "images/APAS2.jpg",
+          "url": "images/power-alert-system/APAS2.jpg",
           "alt": "Apartment Power Alert System"
         },
         {
-          "url": "images/APAS1.jpg",
+          "url": "images/power-alert-system/APAS1.jpg",
           "alt": "Apartment Power Alert System"
         },
         {
-          "url": "images/APAS3.jpg",
+          "url": "images/power-alert-system/APAS3.jpg",
           "alt": "Apartment Power Alert System"
         }
       ],
@@ -93,15 +93,15 @@
       "description": "AgroSense is a smart IoT-Based irrigation system that monitors soil moisture in real-time and automates watering only when needed.",
       "images": [
         {
-          "url": "images/agro1.jpg",
+          "url": "images/agrosense/agro1.jpg",
           "alt": "AgroSense"
         },
         {
-          "url": "images/agro2.jpg",
+          "url": "images/agrosense/agro2.jpg",
           "alt": "AgroSense"
         },
         {
-          "url": "images/agro3.jpg",
+          "url": "images/agrosense/agro3.jpg",
           "alt": "AgroSense"
         }
       ],
@@ -123,15 +123,15 @@
       "description": "Automated tank water level monitoring and motor control system.",
       "images": [
         {
-          "url": "images/AWL1.jpg",
+          "url": "images/water-level/AWL1.jpg",
           "alt": "Automatic Water Level Controller"
         },
         {
-          "url": "images/AWL2.jpg",
+          "url": "images/water-level/AWL2.jpg",
           "alt": "Automatic Water Level Controller"
         },
         {
-          "url": "images/AWL3.jpg",
+          "url": "images/water-level/AWL3.jpg",
           "alt": "Automatic Water Level Controller"
         }
       ],
@@ -154,11 +154,11 @@
       "description": "Automated dual railway gate control system using sensors for safety.",
       "images": [
         {
-          "url": "images/ARG1.jpg",
+          "url": "images/railway-gate/ARG1.jpg",
           "alt": "Automatic Railway Gate Control System"
         },
         {
-          "url": "images/ARG3.jpg",
+          "url": "images/railway-gate/ARG3.jpg",
           "alt": "Automatic Railway Gate Control System"
         }
       ],

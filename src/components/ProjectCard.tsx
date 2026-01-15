@@ -12,7 +12,7 @@ const ProjectCard = ({
   githubLabel,
   liveUrl,
   technologies,
-  linkNote, // ✅ Receive linkNote here
+
 }: ProjectCardProps) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -165,12 +165,7 @@ const ProjectCard = ({
           )}
         </div>
 
-        {/* ✅ Custom Note Text Below Links */}
-        {linkNote && (
-          <p className="mt-2 text-xs italic text-gray-500 dark:text-gray-400 text-center min-h-[1rem]">
-            {linkNote}
-          </p>
-        )}
+
       </div>
     </div>
   );
