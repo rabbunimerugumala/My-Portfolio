@@ -143,13 +143,13 @@ const AboutPage = () => {
               I'm currently building <strong className="text-blue-600 dark:text-blue-400">RcubiX TECHNOLOGIES</strong>, where I’ve dedicated myself to developing <strong>innovative IoT products</strong> that bridge the gap between <strong>electronics</strong> and <strong>software</strong>. RcubiX is a <strong>growing initiative</strong> focused on delivering <strong>high-quality</strong>, <strong>custom engineering projects</strong> for <strong>Diploma</strong> and <strong>B.Tech</strong> students.
             </p>
             <p className="mb-6 leading-relaxed text-justify sm:text-left">
-              Along with IoT and embedded development, I’m deeply into <strong>coding</strong> and <strong>full‑stack web development</strong> — I love building <strong>dynamic</strong>, <strong>responsive websites</strong> and <strong>digital platforms</strong> that combine creative design with powerful functionality. Whether it’s <strong>coding firmware</strong> for an IoT device or developing an entire <strong>web dashboard</strong> to control it — I love bringing <strong>both worlds together</strong>.
+              Along with IoT and embedded development, I’m deeply into <strong>coding</strong> and <strong>full‑stack web development</strong>  I love building <strong>dynamic</strong>, <strong>responsive websites</strong> and <strong>digital platforms</strong> that combine creative design with powerful functionality. Whether it’s <strong>coding firmware</strong> for an IoT device or developing an entire <strong>web dashboard</strong> to control it  I love bringing <strong>both worlds together</strong>.
             </p>
             <p className="mb-6 leading-relaxed text-justify sm:text-left">
               I’m always eager to <strong>explore new technologies</strong>, <strong>learn continuously</strong>, and <strong>push the boundaries</strong> of what’s possible in <strong>IoT</strong>, <strong>embedded systems</strong>, <strong>automation</strong>, and <strong>web technologies</strong>.
             </p>
             <p className="leading-relaxed text-justify sm:text-left">
-              If you're working on something exciting or looking to collaborate on <strong>tech‑driven projects</strong>, feel free to reach out — I’m always open to <strong>new ideas</strong>, <strong>teamwork</strong>, and <strong>innovation</strong>.
+              If you're working on something exciting or looking to collaborate on <strong>tech‑driven projects</strong>, feel free to reach out  I’m always open to <strong>new ideas</strong>, <strong>teamwork</strong>, and <strong>innovation</strong>.
             </p>
           </div>
         </AnimatedSection>

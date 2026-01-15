@@ -108,15 +108,15 @@ const ProjectCard = ({
       </div>
 
       <div className="flex-1 flex flex-col p-4 sm:p-5">
-        <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-900 dark:text-white line-clamp-2 sm:line-clamp-1 min-h-[3.5rem] sm:min-h-[1.75rem]">
+        <h3 className="text-lg sm:text-xl font-bold mb-1 text-gray-900 dark:text-white line-clamp-2 sm:line-clamp-1 min-h-[1.75rem]">
           {title}
         </h3>
-        <p className="text-gray-700 dark:text-gray-300 mb-6 line-clamp-3 sm:line-clamp-2 text-sm leading-relaxed h-[3.8rem] sm:h-[2.5rem] overflow-hidden">
+        <p className="text-gray-700 dark:text-gray-300 mb-2 sm:mb-4 line-clamp-2 text-sm leading-relaxed h-[3rem] overflow-hidden">
           {description}
         </p>
 
         {/* Tech stack */}
-        <div className="mb-1 h-[3rem] overflow-hidden">
+        <div className="mb-1 min-h-[2rem] overflow-hidden">
           <div className="flex flex-wrap gap-1.5">
             {technologies.slice(0, 4).map((tech, index) => (
               <span

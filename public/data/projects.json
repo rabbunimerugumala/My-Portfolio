@@ -74,7 +74,7 @@
     {
       "id": "apartment-power-alert-system",
       "title": "Apartment Power Alert System",
-      "description": "A Smart System to Detect Power Availability and Alert Users to Turn Off or Turn On The Backup Generators — Save Fuel, Stay Notified..",
+      "description": "A Smart System to Detect Power Availability and Alert Users to Turn Off or Turn On The Backup Generators Save Fuel, Stay Notified..",
       "images": [
         {
           "url": "images/power-alert-system/APAS2.jpg",
@@ -136,7 +136,7 @@
     {
       "id": "automatic-water-level-controller",
       "title": "Automatic Water Level Controller",
-      "description": "Automated tank water level monitoring and motor control system.",
+      "description": "Automatic water level monitoring and control system using Arduino and sensors to maintain optimal tank levels with buzzer alerts and relay automation.",
       "images": [
         {
           "url": "images/water-level/AWL1.jpg",
@@ -167,7 +167,7 @@
     {
       "id": "automatic-railway-gate-control",
       "title": "Automatic Railway Gate Control",
-      "description": "Automated dual railway gate control system using sensors for safety.",
+      "description": "Arduino-based automatic railway gate control system using ultrasonic sensors and servo motors to detect trains, close gates, and reopen them safely.",
       "images": [
         {
           "url": "images/railway-gate/ARG1.jpg",
