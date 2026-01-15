@@ -137,13 +137,14 @@ const HomePage = () => {
                 View Projects
                 <ChevronRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button
-                onClick={() => window.open("/resume.pdf", "_blank")}
+              <a
+                href="/resume.pdf"
+                download="Merugumala_Rabbuni_Resume.pdf"
                 className="px-8 py-3.5 bg-white/5 hover:bg-white/10 text-gray-300 font-medium rounded-xl transition-all hover:scale-[1.02] border border-white/10 flex items-center justify-center text-sm sm:text-base backdrop-blur-sm"
               >
                 <FileText size={18} className="mr-2 text-violet-400" />
                 Resume
-              </button>
+              </a>
             </div>
           </AnimatedSection>
         </div>
