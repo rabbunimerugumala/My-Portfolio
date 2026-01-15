@@ -6,12 +6,20 @@
       "description": "A comprehensive habit tracking application focusing on productivity and consistency. Analytics-driven insights help users build and maintain positive habits.",
       "images": [
         {
-          "url": "https://placehold.co/600x600/2563eb/FFF?text=HabitPulse+Pro",
-          "alt": "HabitPulse Pro Dashboard"
+          "url": "images/habitpulse-pro/habit1.png",
+          "alt": "HabitPulse Dashboard"
         },
         {
-          "url": "https://placehold.co/600x600/1e40af/FFF?text=Analytics+View",
-          "alt": "HabitPulse Analytics"
+          "url": "images/habitpulse-pro/habit2.png",
+          "alt": "Habit Tracking View"
+        },
+        {
+          "url": "images/habitpulse-pro/habit3.png",
+          "alt": "Analytics Dashboard"
+        },
+        {
+          "url": "images/habitpulse-pro/habit4.png",
+          "alt": "User Profile"
         }
       ],
       "githubUrl": "https://github.com/rabbunimerugumala/HabitPulse-Pro",
